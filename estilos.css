@@ -1,0 +1,911 @@
+#INICIO{
+    text-align: center;
+    padding-top: 7rem;
+    font-size: 1.8rem;
+    text-shadow: 3px 4px 6px rgb(0, 0 , 0);
+    letter-spacing: 4px;
+    font-weight: 900;
+
+}
+
+h1{
+    font-size: 1rem;
+    color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+
+}
+
+h2{
+    text-align: center;
+    color: crimson;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 4px 6px rgb(0, 0 , 0);
+    letter-spacing: 4px;
+    font-weight: 900;
+
+}
+
+
+header{ background-image: linear-gradient(to left, #555, #777, #656, rgb(199, 161, 92));
+    border: 3px solid;
+    width: 100%;
+}               
+
+
+.loguitos{
+  width: 45px;
+  height: 58px;
+ object-position: center;
+ float: bottom;
+ gap: 4px;
+ display: inline;
+
+}
+
+  .init{
+ display: flex;
+ 
+ align-content: center;
+align-items: center;
+
+position: relative;
+object-position: center;
+justify-items: center;
+box-sizing: border-box;
+overflow: hidden;
+
+  }
+
+  .inicio{
+    border-radius: 0.3rem;
+    position: relative;
+    gap: 1.2rem;
+                  
+    box-shadow: 1rem 1.1rem 5rem rgb(0, 0 , 0);
+    object-position: center;
+   
+    width: 17rem;
+    height: 10rem;
+    margin: 1.5px 1.5px;
+    
+    overflow: hidden;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+     
+  }
+
+
+.inicio:first-child{
+    flex-grow: 0.3rem;
+    animation: estirarIzquierda 5s  ;
+    animation-iteration-count: 3;
+}
+ 
+
+@keyframes estirarIzquierda {
+  0% {
+    width: 10rem;
+    filter: brightness(0);
+  }
+  25%{
+    width: 13rem;
+    filter: brightness(3px);
+   
+  }
+  50%{
+    width: 17rem;
+    filter: brightness(5px);
+    
+  }
+  75%{
+    width: 14rem;
+    filter: brightness(8px);
+   
+  }
+  100% {
+    width: 10rem; /* Aumenta el ancho */
+   /* Invierte la imagen horizontalmente para crear el efecto de estiramiento hacia la izquierda */
+   filter: brightness(11px);
+        }
+    
+} 
+
+
+hr{
+  width: 0;
+  height: 0;
+}
+
+.inicio:nth-child(2){ animation: estirarDerecha 5s 5 ;
+
+}
+
+@keyframes estirarDerecha {
+  0% {
+    width: 10rem;
+  }
+  100% {
+    width: 20rem; /* Aumenta el ancho */
+  }
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+
+#AI{
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 7rem;
+    font-size: 2rem;
+}
+
+    article{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1rem;
+    }
+    
+
+
+ul a{
+    font-size: 0.9rem;
+    color: rgb(199, 161, 252);
+}
+
+
+a:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+
+   
+
+ 
+  #img1JUNT{
+      width: 16rem;
+      height: 120px;
+     
+      overflow: hidden;
+      justify-self: flex-end;
+      align-self: center;
+      float: right;
+      margin: 0;
+      box-shadow:  3px 1px 5px rgb(128, 0, 129);
+      background-color:  rgb(210, 220, 110);
+
+        
+        }
+       
+           
+        
+        #logo{
+          width: 16rem;
+          height: 19rem;
+          justify-content: left;
+          float: left;
+          align-self: center;
+          
+          }
+            
+        
+
+ 
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+  
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  label{
+    padding-top: 15px;
+    color: #0e4166;
+    visibility: visible;
+   
+    padding-right: 0.5rem;
+    height: 100%;
+   
+  }
+  
+  .nav{
+    background-image: linear-gradient(to left, #555, #777, #656, rgb(199, 161, 92));
+   
+    
+    
+  }
+  
+  .nav .nav_toggle {
+     
+     cursor:pointer;
+     margin: 0rem 1rem;
+     right:0;
+     visibility: visible;
+     align-self: center;
+     justify-self: center;
+     color: #0e4166;
+    
+  }
+  
+  .nav .nav_toggle > svg {
+    width: 2.3rem;
+    fill: var(--clr-primary);
+    margin-left: 1rem;
+    
+  }
+  
+  .nav .nav_toggle .close {
+    display : none;
+ 
+  }
+  
+  .nav .nav_menu {
+    margin-top: 0.2rem;
+    
+  }
+  
+  .nav .nav_checkbox {
+    display: none;
+   
+  }
+  
+  .nav .nav_menu {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+
+   
+  }
+  
+  .nav .nav_menu li {
+    list-style: none;
+    opacity: 0;
+    transition: opacity  .5s ease-in-out;
+    margin: 10px ;
+    margin-right: 0.5rem;
+    
+   
+  }
+  
+  .nav .nav_menu li:first-child {
+    margin-right: auto;
+    opacity: 1;
+  }
+  
+  
+  .nav .nav_menu li a {
+    text-decoration : none;
+   
+    font-weight: 900;
+    text-align: left;
+   
+  }
+  
+  
+  /* activar/desactivar el menu en movil*/
+  
+  #nav_checkbox:checked ~ .nav_menu li {
+    opacity: 1;
+    
+  }
+  
+  
+  /*  mostrar / ocultar iconos respectivos */
+  
+  #nav_checkbox:checked ~ label.nav_toggle .menu {
+    display: none;
+  }
+  
+  #nav_checkbox:checked ~ label.nav_toggle .close {
+    display: block;
+  }
+  
+  
+  /*   Desktop  */
+  
+  @media only screen and (min-width: 560px){
+    
+    .nav .nav_toggle {
+      display: none;
+    }
+    
+    .nav .nav_menu {
+      flex-direction :row;
+    }
+    
+    .nav .nav_menu li {
+      opacity : 1;
+    }
+    
+  }
+  
+  
+  #navL{
+    width: 5rem;
+    height: 8rem;
+    filter:  drop-shadow(0.2rem 0.1rem 0.2rem  #000);
+  }
+            
+                  
+                     
+
+                     article{
+                       
+                        
+                        justify-content: center;
+                        align-items: center;
+                        
+                    
+                     }
+    
+
+     
+    #mediaP{
+        text-align: right;
+        text-decoration: underline;
+        color: rgb(0, 0, 0);
+        text-shadow: 0.3px 0.2px 0.5px;
+        font-weight: lighter;
+        font-family: cursive;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        justify-content: right;
+        margin-right: 25px;
+        
+    
+    
+    
+    }
+
+    #pP{
+      box-sizing: border-box;
+      padding-right: 5px;
+      
+    }
+
+    p{
+       
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.7rem;
+        color: rgb(0, 0, 0);
+        margin-right: 15px;
+        font-weight: 500;
+        justify-content: center;
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-left: 12px;
+        
+    }
+
+  
+
+   #TRABAJO{
+    justify-content: flex-start;
+    margin: 3px 2px  rgb(0, 0, 0);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 1rem;
+    box-shadow: 3px 1px 0.5px rgb(0, 0, 0);
+    display: inline;
+    align-items: center;
+
+}
+
+#logo{
+
+   
+   align-self: flex-start;
+   margin: 3px 2px;
+   justify-content: flex-start;
+   float: left;
+   border: 3px  rgb(0, 0, 0) solid;
+   padding: 0px;
+
+}
+
+#pastores{
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    font-size: 1rem;
+    margin: 3px 2px;
+    box-shadow: 3px 1px 0.5px rgb(0, 0, 0);
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-start;
+
+    
+
+}
+ 
+ #COSTADOO{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3px 2px;
+    align-self: flex-start;
+
+ }
+#imgPAST{
+   width: 18rem;
+   height: 21rem;
+   box-shadow: 2px 4px rgb(0, 0 , 0);
+   float: left;
+   object-fit: cover;
+   margin: 1px 1px;
+   
+
+}
+
+
+
+html{
+    background-color:  #d2bbf2;
+    border-color: #fefefe;
+}
+
+article{
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+
+#indice{
+    font-size: 0.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     box-shadow: 3px 1px 0.5px rgb(0, 0, 0); 
+     justify-content: left;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     flex-flow: column;
+     text-align: left;
+     
+
+
+}
+
+#indice h3{
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 0.3rem;
+
+}
+
+
+svg {
+  position: absolute;
+ 
+  left: 0;
+  width: 100%;
+  height: 35%;
+  box-sizing: border-box;
+
+  background-color: #0e4166;
+  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+
+}
+ body{
+  margin: 0;
+  padding: 0;
+ }
+
+ ol{
+    font-weight: 700;
+    
+    padding: 0 0;
+
+ }
+ 
+
+
+
+ @media only screen and (min-width:560px){
+    
+  .nav .nav_toggle {
+    display: none;
+  }
+  
+  .nav .nav_menu {
+    flex-direction :row;
+  }
+  
+  .nav .nav_menu li {
+    opacity : 1;
+  }
+  
+}
+
+
+
+
+
+
+
+
+#gridSEC{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px); /* 3 columnas del mismo ancho */
+     grid-template-rows: repeat(2, mincontent);
+    gap: 1px 1px;
+  
+   grid-auto-rows: 1fr;
+   
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   
+    width: 100%;
+    
+    background-image: url(logohighq.jpg);
+    object-fit: scale-down;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    box-shadow: 0.3rem 1rem solid rgb(0, 0 , 0);
+   
+    border: 2px solid rgb(0, 0 , 0);
+    
+
+    
+    box-shadow: 0.4px 0.5px 1px;
+    border-style: solid;
+    margin-bottom: 20px;
+    overflow: hidden;
+   
+    
+    
+    
+
+}
+ .griditem:first-child{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: fit-content;
+    height: fit-content;
+ }
+
+.griditem:nth-child(7){
+margin-right: 5px;
+
+}
+ @media screen and (min-width:150px) and (max-width:355){
+    #gridsec img{
+        width: 9rem;
+        height: 7rem;
+        float:left;
+    }
+ }
+
+#gridSEC img{
+    width: 200px;
+    height: 6rem;
+    border: 0.5px solid rgb(0, 0, 0);
+  
+    
+    margin: 1px ;
+    background-color: rgb(39,97,131);
+    box-shadow: 0.9rem 1rem rgb(89, 55, 199);
+   
+    padding: 5px;
+    box-shadow: 0.4px 0.5px 1px;
+    border-style: solid;
+   
+    
+    display: grid;
+    margin-right: 1px;
+
+}
+
+
+.griditem{
+    transition: opacity 0.3s ease;
+    transition: width 8rem ease;
+    transition: height 8rem ease;
+    position: relative;
+    overflow: hidden;
+    animation: moveUpDown 6s 25, fadeOutBlur 6s 25;
+}
+
+ 
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Mueve hacia arriba */
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutBlur {
+  0%, 100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  50% {
+    opacity: 0.7; /* Reduce la opacidad */
+    filter: blur(2px); /* Añade un efecto de desenfoque */
+  }
+}
+
+.griditem:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+    transition: width 8rem ease;
+    transition: height 8rem ease;
+}
+
+#LOGOEB{
+    align-self: center;
+    justify-self: center;
+    object-fit: fill;
+    
+}
+
+#ministrando1{
+    display: grid;
+}
+
+#indice a{
+    color: rgb(0, 0 , 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#indice a:hover{
+    color: rgb(210, 220, 110);
+    transition: 0.3s;
+}
+
+#indice{
+  margin-right:0;
+  border: 0 0 0;
+}
+
+#indice p{
+  
+  text-align: left;
+  padding-right: 2.5rem;
+
+}
+
+#indice img{
+ margin-right: 1.8rem;
+  border: none;
+  object-fit: scale-down;
+  width: 12rem;
+}
+
+
+
+
+.secI{
+    float: right;
+  
+    height: 15rem;
+    box-shadow: 3px 4px 0.4rem rgb(99, 111, 14);
+    border: 1.5px solid rgb(0, 0 , 0);
+        transition: opacity 0.3s ease;
+        width: 15.3rem;
+}
+ 
+.secI:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.secP{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+   
+    margin-right: 5px;
+}
+
+.cris{
+    left: 0;
+    animation-name: moveAndPause;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    box-shadow: 3px 4px rgb(177, 166, 222);
+    width: 39rem;
+  background-color: rgb(71, 48, 188,0.4);;;
+    position: absolute;
+    animation-iteration-count: 25;
+    align-self: center;
+    opacity: 1;
+    filter: none;
+    object-fit: scale-down;
+    
+    
+   
+    
+}
+
+.divC{
+    width: 100%;    height: 31rem;
+   overflow: hidden;
+   
+    position: relative;
+   align-items: center;
+   
+    
+}
+
+@keyframes moveAndPause {
+    100% {
+      left: 50%; /* Mover la imagen al centro */
+      transform: translateX(-50%); /* Ajustar para que quede centrada */
+      opacity: 0.5;
+      filter: blur(10rem);
+      filter: brightness(0.3);
+    }
+  }
+
+  .secA{
+    color: rgb(250, 250, 250,00.4);
+    text-decoration: none;
+  }
+
+
+  #COMIENZO{
+   
+    background-repeat: no-repeat;
+    background-position: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+
+   h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: 3px 4px 6px rgb(0, 0 , 0);
+    letter-spacing: 4px;
+    margin: 2rem 3rem;
+    text-align: center;
+    padding: 0.4rem 0;
+
+  }
+
+  #icont{
+    display: flex;
+   
+    align-items: center;
+    width: 100%;
+    float: right;
+                   
+   
+
+  }
+
+  .imgI{
+    border-radius: 0.3rem;
+                  
+    box-shadow: 1rem 1.1rem 5rem rgb(0, 0 , 0);
+    width: 19rem;
+   
+    margin: 0.5rem 1REM;
+    float: right;
+    
+    
+    
+  }
+
+
+
+  .pAC{
+    text-align: left;
+    font-size: 1.9rem;
+    
+    
+  }
+
+  .divA{
+    width: 100%;
+    border: 1.9rem 0.3rem solid  rgb(0, 0 , 0);
+  }
+
+          
+   #as img{
+    width: 18rem;
+
+   }
+
+   
+
+   .icon-link-hover:hover{
+    transition: 0.3s ease;
+    color: rgb(210, 220, 110);
+
+   }
+
+   #botonsito{
+    transition: all 1s;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: flash;
+    text-align: center;
+    justify-self: center;
+    width: 10rem;
+
+   }
+
+   .nav_menu a{
+    border-radius: 3rem;
+    border-color: transparent;
+    border-style: groove;
+    background-color: #656;
+    padding: 10px 6px;
+
+                        }
+
+             .loguitos{
+              padding-bottom: 19px;
+              font-size:0.6rem;
+             }           
+
+             .container-fluid button{
+              justify-self: flex-end;
+              align-self: center;
+              
+              display: flex;
+             }
+
+             #navL{
+              height: 5rem;
+             }
+
+             .navbar-toggler-icon{
+              
+              display: flex;
+             }
+
+             .container-fluid{
+              display: flex;
+              justify-items: space-between;
+             }
+
+             #AI h2{
+              font-size: 1.9rem;
+              padding-top: 1.2+rem;
+             }
+
+
+             .icont {
+              background-color:  #d2bbf2;
+             }
+
+             .redesP{
+              font-size: 0.9rem;
+              letter-spacing: 3.5px;
+              text-align: center;
+                
+               
+                
+             }
+
+     
